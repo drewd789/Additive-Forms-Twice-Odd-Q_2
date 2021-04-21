@@ -121,7 +121,7 @@ Factoring out the highest power of $\pi$, the coefficient $c$ of any variable $x
 Multiplying a form by $\pi$ increases the level of each variable by one, and does not affect the existence of a nontrivial zero.  Considering the levels of variables modulo $d$, applying this transformation any number of times effects a cyclic permutation of the levels.  This is useful for arranging the variables in an order which is more convenient, a process to which we will refer as \textit{normalization}. See Lemma 3 of \cite{davenport1963homogeneous} for a proof of the following Lemma.
 
 \begin{lemma}
-Given an additive form of degree $d$ in an arbitrary local field $K$, let $s$ be the total number of variables, $s_i$ be the number of variables in level $i \pmod{d}$. By a change of variables, the form may be transformed to one with:
+Given an additive form of degree $d$ in an arbitrary local field $K$, let $s$ be the total number of variables, and $s_i$ be the number of variables in level $i \pmod{d}$. By a change of variables, the form may be transformed to one with:
 \begin{align}
 \begin{split}
 s_0 \ge \frac{s}{d},  
@@ -133,7 +133,7 @@ s_0 + s_1 \ge \frac{2s}{d},
 \ldots,
 \end{split}
 \begin{split}
-s_0 + \ldots + s_{d-1} = s
+s_0 + \ldots + s_{d-1} = s.
 \end{split}
 \end{align}
 \end{lemma}
@@ -188,7 +188,7 @@ First suppose that the two variables have differing $\pi$-coefficients.  We have
 
 \bigskip
 
-Suppose now that $a_1 = b_1$.
+Suppose now that $a_1 = b_1$.  Then we have
 
 \smallskip
 
@@ -196,7 +196,7 @@ $(a_1 + b_1)\pi + (1 + a_2 + b_2 + c)\pi^2 + (j + a_3 + b_3 + b_1c + c)\pi^3 \eq
 
 $2a_1\pi + (1 + a_2 + b_2 + c)\pi^2 + (j + a_3 + b_3 + a_1c + c)\pi^3 \equiv$
 
-$(1 + a_2 + b_2 + c)\pi^2 + (a_1 + j + a_3 + b_3 + a_1c + c)\pi^3 \pmod{\pi^4}$
+$(1 + a_2 + b_2 + c)\pi^2 + (a_1 + j + a_3 + b_3 + a_1c + c)\pi^3 \pmod{\pi^4}.$
 
 \smallskip
 
@@ -204,13 +204,13 @@ Choosing $c$ so that $1 + a_2 + b_2 + c \equiv 1 \pmod{2}$ gives a variable rais
 
 \bigskip
 
-If $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$, then $j=1$.  Choose $c$ so that $c \equiv 1 + a_2 + b_2 \pmod{2}$.
+If $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$, then $j=1$.  Choose $c$ so that $c \equiv 1 + a_2 + b_2 \pmod{2}$.  It follows that
 
 \smallskip
 
 $(1 + a_2 + b_2 + c)\pi^2 + (a_1 + j + a_3 + b_3 + a_1c + c)\pi^3 \equiv$
 
-$(a_3 + b_3 + (1 + a_1)(a_2 + b_2))\pi^3 \pmod{\pi^4}$
+$(a_3 + b_3 + (1 + a_1)(a_2 + b_2))\pi^3 \pmod{\pi^4}.$
 
 \smallskip
 
@@ -218,13 +218,13 @@ If $a_1 = 1$, the expression becomes $a_3 + b_3$, and by the pigeonhole principl
 
 \bigskip
 
-If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, then $j=0$.  Choose $c$ so that $c \equiv a_2 + b_2 \pmod{2}$.
+If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, then $j=0$.  Choose $c$ so that $c \equiv a_2 + b_2 \pmod{2}$.  It follows that
 
 \smallskip
 
 $(1 + a_2 + b_2 + c)\pi^2 + (a_1 + j + a_3 + b_3 + a_1c + c)\pi^3 \equiv$
 
-$\pi^2 + (a_1 + a_3 + b_3 + (1 + a_1)(a_2 + b_2))\pi^3 \pmod{\pi^4}$
+$\pi^2 + (a_1 + a_3 + b_3 + (1 + a_1)(a_2 + b_2))\pi^3 \pmod{\pi^4}.$
 
 \smallskip
 
@@ -233,11 +233,11 @@ As above, the two variables can be chosen so that $(a_3 + b_3 + (1 + a_1)(a_2 + 
 
 Because the proof of Theorem \ref{theo} involves inspecting numerous subcases, it is useful to introduce a compact notation to convey important information about particular forms and contractions performed on them.  The notation $(s_0, s_1, s_2, \ldots)$ indicates any form having \textit{at least} $s_i$ variables at level $i$.  Levels which are omitted in this notation may be assumed to contain as few as no variables.  For example, $(4, 2, 0, 1)$ indicates a form with at least four variables at level 0, at least two variables at level 1, as few as no variables at level 2, at least one variable in level 3, and as few as no variables at any higher level.
 
-To indicate that variables in a particular level fall into certain $\pi$-coefficient classes, the number of variables in that level are partitioned into two numbers stacked vertically.  For example, $(^3_1, 2, 0, 1)$ indicates a form as above with four variables in level 0, three of which are in one $\pi$-coefficient class, and one of which is in the other.  Note that this notation does not give any indication of which $\pi$-coefficient class contains which number of variables.
+To indicate that variables in a particular level fall into certain $\pi$-coefficient classes, the number of variables in that level are partitioned into two numbers stacked vertically.  For example, $(^3_1, 2, 0, 1)$ indicates a form as above with at least four variables in level 0, at least three of which are in one $\pi$-coefficient class, and at least one of which is in the other.  Note that this notation does not give any indication of which $\pi$-coefficient class contains which number of variables.
 
 We indicate that a contraction performed on a certain type of form results in a form of another specified type with an arrow, labeled with the contraction performed.  For example, consider a form with at least two variables in a level with the same $\pi$-coefficient, and having at least two variables two levels higher with differing $\pi$-coefficients.  The first two can be used to perform an \textit{s2}-contraction, resulting in a variable exactly two levels higher:
 
-$$({}^{2}_{0}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 0, {}^{2}_{1})$$
+$$({}^{2}_{0}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 0, {}^{2}_{1}).$$
 
 In some places square brackets are used instead of parentheses to succinctly indicate an \textit{exact} number of variables in the specified levels and coefficient classes (e.g., $[^3_1, 2, 0, 1]$).
 
@@ -252,12 +252,12 @@ Let $d=2m$, $m$ odd, and $x_i$ be a variable of (\ref{eq}) at level $h$.  Suppos
 
 By Hensel's Lemma, for the rest of this paper we may assume that an \textit{s3}-contraction produces a variable either 3 or 4 levels higher, and a \textit{t}-contraction produces a variable exactly 4 levels higher.  To draw the reader's attention to a level from which a variable satisfying this statement of Hensel's Lemma will originate, we append an asterisk.  For example:
 
-$$({}^{2}_{0}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 0, {}^{2*}_{1})$$
+$$({}^{2}_{0}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 0, {}^{2*}_{1}).$$
 
 \section{General Lemmas}
 
 \begin{lemma} \label{slide}
-Suppose that (\ref{eq}) has two variables in level $k$, and at least one variable in levels $k+1$, $k+2$, ... $k+t-1$, then contractions can be performed to produce a variable at level at least $k+t$.
+Suppose that (\ref{eq}) has two variables in level $k$, and at least one variable in levels $k+1$, $k+2$, \ldots, $k+t-1$, then contractions can be performed to produce a variable at level at least $k+t$.
 \end{lemma}
 \begin{proof}
 Any two variables in the same level can be contracted to a variable at least one level higher.  By repeated contractions, we obtain the desired variable.
@@ -274,43 +274,41 @@ If one of the variables has been raised at least two levels, performing an \text
 Suppose that (\ref{eq}) has at least four variables in level $k$ which can be used to form a pair with the same $\pi$-coefficient and a pair with differing $\pi$-coefficients, and at least one variable in level $k+1$.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
 \begin{proof}
-$({}^{3}_{1}, 1) \xrightarrow{s2} ({}^{1}_{1}, 1, 1) \xrightarrow{d} (0, {}^{1*}_{1}, 1) \xrightarrow{d} (0, 0, {}^{2*}_{0})$
-
-A zero follows from Lemma \ref{fromtwo}.
+Without loss of generality, assume $k=0$.  The hypotheses imply that (\ref{eq}) is of type $({}^{3}_{1})$.  After the series of contractions
+$$({}^{3}_{1}, 1) \xrightarrow{s2} ({}^{1}_{1}, 1, 1) \xrightarrow{d} (0, {}^{1*}_{1}, 1) \xrightarrow{d} (0, 0, {}^{2*}_{0}),$$
+a zero follows from Lemma \ref{fromtwo}.
 \end{proof}
 
 \begin{lemma}\label{empty4}
 Suppose $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$, that (\ref{eq}) has at least three variables in level $k$  with the same $\pi$-coefficient, and at least one variable in level $k+4$.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
 \begin{proof}
-$({}^{3}_{0}, 0, 0, 0, 1) \xrightarrow{t} (1, 0, 0, 0, 2*)$
-
-A zero follows from Lemma \ref{fromtwo}.
+Without loss of generality, assume $k=0$.  The hypotheses imply that (\ref{eq}) is of type $({}^{3}_{0},0,0,0,1)$.  After the contraction
+$$({}^{3}_{0}, 0, 0, 0, 1) \xrightarrow{t} (1, 0, 0, 0, 2*),$$
+a zero follows from Lemma \ref{fromtwo}.
 \end{proof}
 
 \begin{lemma} \label{empty234}
 Suppose that (\ref{eq}) has at least four variables in level $k$ which can be used to form two pairs with the same $\pi$-coefficient, and a variable in at least one of levels $k+2$, $k+3$, or $k+4$.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
 \begin{proof}
+
+The hypotheses imply that (\ref{eq}) is of the type $({}^{2}_{2})$ or $({}^{4}_{0})$.  In either case, we are able to perform a pair of \textit{s2}- or \textit{s3}-contractions.  Assume that it is of type $({}^{2}_{2})$.  (The same argument applies if (${}^{2}_{2}$) is replaced with (${}^{4}_{0}$).)  Without loss of generality, assume $k=0$.  If there is a variable in level $k+2$, then after the contractions
+$$({}^{2}_{2}, 0, 1) \xrightarrow{s2, s2} (0, 0, 3*),$$
+a zero follows from Lemma \ref{fromtwo}.
+
+If there is a variable in level $k+3$, then after an initial pair of \textit{s2}-contractions, there are two possible cases.
+
+$({}^{2}_{2}, 0, 0 ,1) \xrightarrow{s2,s2}$
 \begin{itemize}
-    \item $({}^{2}_{2}, 0, 1) \xrightarrow{s2, s2} (0, 0, 3*)$
-    
-    A zero follows from Lemma \ref{fromtwo}.
-    
-    \item $({}^{2}_{2}, 0, 0 ,1) \xrightarrow{s2,s2}$ 
-    \begin{itemize}
-        \item $(0, 0, {}^{2*}_{0}, 1)$
-        \item $(0, 0, {}^{1*}_{1*}, 1) \xrightarrow{d} (0, 0, 0, {}^{2*}_{0})$
-    \end{itemize}
-    
-    A zero follows in both cases from Lemma \ref{fromtwo}.
-    
-    In this last case, assume by Lemma \ref{fromtwo} that the variables resulting from two \textit{s3}-contractions are not produced in the same level.
-    
-    \item $({}^{2}_{2}, 0, 0 ,0, 1) \xrightarrow{s3, s3} (0, 0, 0, 1*, 2*)$
-    
-    A zero follows from Lemma \ref{fromtwo}.
+    \item $(0, 0, {}^{2*}_{0}, 1)$
+    \item $(0, 0, {}^{1*}_{1*}, 1) \xrightarrow{d} (0, 0, 0, {}^{2*}_{0})$
 \end{itemize}
+A zero follows in both cases from Lemma \ref{fromtwo}.
+
+If there is a variable in level $k+4$, assume by Lemma \ref{fromtwo} that the variables resulting from the following two \textit{s3}-contractions are not produced in the same level:
+$$({}^{2}_{2}, 0, 0 ,0, 1) \xrightarrow{s3, s3} (0, 0, 0, 1*, 2*).$$
+A zero follows from Lemma \ref{fromtwo}.
 
 \end{proof}
 
@@ -335,12 +333,12 @@ The case $m=1$ is treated separately; see \cite{MR2104929}, Chapter VI.  In the 
 \begin{lemma} \label{fivesame}
 Suppose $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$ and (\ref{eq}) has at least five variables in the same level with the same $\pi$-coefficient, or at least six variables with at least three variables in each $\pi$-coefficient class.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
-\begin{proof}~
+\begin{proof}
+Without loss of generality, assume the level indicated is $0$.  The hypotheses imply that (\ref{eq}) is of type $({}^{5}_{0})$ or $({}^{3}_{3})$.  Consider the contractions given in each case:
 
-$({}^{5}_{0}) \xrightarrow{t, t} (1,0,0,0,2*)$
+$$({}^{5}_{0}) \xrightarrow{t, t} (1,0,0,0,2*),$$
 
-$({}^{3}_{3}) \xrightarrow{t, t} ({}^{1}_{1},0,0,0,2*)$
-
+$$({}^{3}_{3}) \xrightarrow{t, t} ({}^{1}_{1},0,0,0,2*).$$
 A zero follows from Lemma \ref{fromtwo}.
 \end{proof}
 
@@ -382,41 +380,40 @@ By Lemma \ref{max5}, assume level 0 contains exactly four variables.  By Lemma \
 \begin{lemma}\label{2same2diff}
 Suppose that (\ref{eq}) has two variables in level $k$ with the same $\pi$-coefficient, and two variables in at least one of levels $k+1$, $k+2$, or $k+3$ with differing $\pi$-coefficients.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
-\begin{proof}~
-
+\begin{proof}
+Without loss of generality, the hypotheses imply that (\ref{eq}) is of type $({}^{2}_{0}, {}^{1}_{1})$, $({}^{2}_{0}, 0, {}^{1}_{1})$, or $({}^{2}_{0}, 0, 0, {}^{1}_{1})$.  In the first two cases, consider the following series of contractions:
+$$({}^{2}_{0}, {}^{1}_{1}) \xrightarrow{s2} (0, {}^{1}_{1}, 1*) \xrightarrow{d} (0, 0, {}^{2*}_{0}),$$
+$$({}^{2}_{0}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 0, {}^{2*}_{1}).$$
+In the final case, consider the two following subcases:
+\item $({}^{2}_{0}, 0, 0, {}^{1}_{1}) \xrightarrow{s3}$
 \begin{itemize}
-    \item $({}^{2}_{0}, {}^{1}_{1}) \xrightarrow{s2} (0, {}^{1}_{1}, 1*) \xrightarrow{d} (0, 0, {}^{2*}_{0})$
-    \item $({}^{2}_{0}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 0, {}^{2*}_{1})$
-    \item $({}^{2}_{0}, 0, 0, {}^{1}_{1}) \xrightarrow{s3}$
-    \begin{itemize}
-        \item $(0, 0, 0, {}^{2*}_{1})$
-        \item $(0, 0, 0, {}^{1}_{1}, 1*) \xrightarrow{d} (0, 0, 0, 0, {}^{2*}_{0})$
-    \end{itemize}
+    \item $(0, 0, 0, {}^{2*}_{1})$
+    \item $(0, 0, 0, {}^{1}_{1}, 1*) \xrightarrow{d} (0, 0, 0, 0, {}^{2*}_{0})$
 \end{itemize}
-
-In each case, a zero follows from Lemma \ref{fromtwo}.
+In every case, a zero follows from Lemma \ref{fromtwo}.
 \end{proof}
 
 \begin{lemma}\label{2same2more}
 Suppose that (\ref{eq}) has two variables in level $k$ with the same $\pi$-coefficient, and a variable in both of levels $k+2$ and $k+3$, or both of levels $k+3$ and $k+4$.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
-\begin{proof}~
-\begin{itemize}
-    \item $({}^{2}_{0}, 0, 1, 1) \xrightarrow{s2}$
-    \begin{itemize}
-        \item $(0, 0, {}^{2*}_{0}, 1)$
-        \item $(0, 0, {}^{1*}_{1}, 1) \xrightarrow{d} (0, 0, 0, {}^{2*}_{0})$
-    \end{itemize}
+\begin{proof}
+If there is a variable in each of levels $k+2$ and $k+3$, then after an initial \textit{s2}-contraction, there are two possible cases:
 
-    A zero follows from Lemma \ref{fromtwo}.
-    \item $({}^{2}_{0}, 0, 0, 1, 1) \xrightarrow{s3}$
-    \begin{itemize}
-        \item $(0, 0, 0,2*, 1)$
-        \item $(0, 0, 0,1, 2*)$
-    \end{itemize}
-    
-    A zero follows from Lemma \ref{slide} and Hensel's Lemma.
+$({}^{2}_{0}, 0, 1, 1) \xrightarrow{s2}$
+\begin{itemize}
+    \item $(0, 0, {}^{2*}_{0}, 1)$
+    \item $(0, 0, {}^{1*}_{1}, 1) \xrightarrow{d} (0, 0, 0, {}^{2*}_{0})$
 \end{itemize}
+A zero follows from Lemma \ref{fromtwo}.
+
+If there is a variable in each of levels $k+3$ and $k+4$, then after an initial s3-contraction, there are two possible cases:
+
+$({}^{2}_{0}, 0, 0, 1, 1) \xrightarrow{s3}$
+\begin{itemize}
+    \item $(0, 0, 0,2*, 1)$
+    \item $(0, 0, 0,1, 2*)$
+\end{itemize}
+A zero follows from Lemma \ref{slide} and Hensel's Lemma.
 \end{proof}
 
 \begin{lemma} \label{2and2and1}
@@ -430,20 +427,18 @@ By Lemma \ref{2same2diff}, assume the variables in level $k+1$ have the same $\p
 Suppose that (\ref{eq}) has two variables in level $k$ with differing $\pi$-coefficients, a variable in level $k+1$, and a variable in at least one of levels $k+2$ or $k+4$.  Then (\ref{eq}) has a nontrivial zero.
 
 \end{lemma}
-\begin{proof}~
-\begin{itemize}
-    \item $({}^{1}_{1}, 1, 1) \xrightarrow{d} (0, {}^{1*}_{1}, 1) \xrightarrow{d} (0, 0, {}^{2*}_{0})$
-    \item $({}^{1}_{1}, 1, 0, 0, 1) \xrightarrow{d} (0, {}^{2}_{0}, 0, 0, 1) \xrightarrow{s3} (0, 0, 0, 0, 2*)$
-    
+\begin{proof}
+Consider the following series of contractions for each case:
+$$({}^{1}_{1}, 1, 1) \xrightarrow{d} (0, {}^{1*}_{1}, 1) \xrightarrow{d} (0, 0, {}^{2*}_{0}),$$
+$$({}^{1}_{1}, 1, 0, 0, 1) \xrightarrow{d} (0, {}^{2}_{0}, 0, 0, 1) \xrightarrow{s3} (0, 0, 0, 0, 2*).$$
 In both cases, a zero follows from Lemma \ref{fromtwo}.
-\end{itemize}
 \end{proof}
 
 \begin{lemma} \label{threeokay}
-Suppose that $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, $s \ge \frac{10}{7}d$, and after normalization, for some $k$ with $0 \le k \le d-4$, (\ref{eq}) has two variables in level $k$ with the same $\pi$-coefficient, at least four variables in level $k+2$, and at most $k+4$ variables in levels 0 through $k+1$ together.  Then (\ref{eq}) has a nontrivial zero.
+Suppose that $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, $s \ge \frac{3}{2}d$, and after normalization, for some $k$ with $0 \le k \le d-4$, (\ref{eq}) has two variables in level $k$ with the same $\pi$-coefficient, at least four variables in level $k+2$, and at most $\frac{3}{2}(k+3)$ variables in levels 0 through $k+1$ together.  Then (\ref{eq}) has a nontrivial zero.
 \end{lemma}
 \begin{proof}
-By Lemma \ref{2same2diff}, assume all of the variables in level $k+2$ have the same $\pi$-coefficient.  By Lemma \ref{2same2more}, assume level $k+3$ is unoccupied.  By normalization, level 0 is occupied, and so if any of levels $k+4$, $k+5$, and $k+6$ is congruent to $0$ modulo $d$, then a zero follows from Lemma \ref{empty234}. Thus, assume $k+6 < d$.  By Lemma \ref{empty234}, assume levels $k+4$, $k+5$, and $k+6$ are unoccupied.  By normalization, $s \ge \frac{10}{7}d$ implies that levels 0 through $k+6$ contain at least $\frac{10}{7}(k+7) \ge k+10$ variables, and so level $k+2$ contains at least six variables.  A zero follows from Lemma \ref{max7}.
+By Lemma \ref{2same2diff}, assume all of the variables in level $k+2$ have the same $\pi$-coefficient.  By Lemma \ref{2same2more}, assume level $k+3$ is unoccupied.  By normalization, level 0 is occupied, and so if any of levels $k+4$, $k+5$, and $k+6$ is congruent to $0$ modulo $d$, then a zero follows from Lemma \ref{empty234}. Thus, assume $k+6 < d$.  By Lemma \ref{empty234}, assume levels $k+4$, $k+5$, and $k+6$ are unoccupied.  By normalization, $s \ge \frac{3}{2}d$ implies that levels 0 through $k+6$ contain at least $\frac{3}{2}(k+7) = \frac{3}{2}(k+3) + 6$ variables, and so level $k+2$ contains at least six variables.  A zero follows from Lemma \ref{max7}.
 \end{proof}
 
 \begin{lemma} \label{max3}
@@ -460,16 +455,16 @@ First, suppose that level 0 contains four variables.  By Lemma \ref{max4}, assum
 
 %followed by either $[{}^2_0,0]$ or $[{}^3_0,0]$.
 
-Now, suppose level 0 contains exactly three variables, not all having the same $\pi$-coefficient.  Suppose that level 1 is occupied.  By Lemma \ref{2diff2more}, assume level 2 is unoccupied.  By normalization, level 1 contains at least two variables.  By Lemma \ref{2and2and1}, assume level 3 is unoccupied.  By normalization, level 1 contains at least three variables, and by Lemma \ref{2same2diff} assume they have the same $\pi$-coefficient.
+Now, suppose level 0 contains exactly three variables, not all having the same $\pi$-coefficient.  Suppose that level 1 is occupied.  By Lemma \ref{2diff2more}, assume level 2 is unoccupied.  By normalization, level 1 contains at least two variables.  By Lemma \ref{2and2and1}, assume level 3 is unoccupied.  By normalization, level 1 contains at least three variables, and by Lemma \ref{2same2diff} assume they have the same $\pi$-coefficient.  After the series of contractions
 
-$$({}^{2}_{1}, {}^{3}_{0}) \xrightarrow{d} (1, {}^{4*}_{0}) \xrightarrow{s2, s2} (1, 0, 0, 2*)$$
-A zero follows from Lemma \ref{fromtwo}.  Thus assume level 1 is unoccupied.  Therefore in this case, the form begins $[{}^2_1,0]$.
+$$({}^{2}_{1}, {}^{3}_{0}) \xrightarrow{d} (1, {}^{4*}_{0}) \xrightarrow{s2, s2} (1, 0, 0, 2*),$$
+a zero follows from Lemma \ref{fromtwo}.  Thus assume level 1 is unoccupied.  Therefore in this case, the form begins $[{}^2_1,0]$.
 
 %By normalization, level 2 is occupied, and by Lemma \ref{2same2more}, assume level 3 is unoccupied.  By normalization, then, level 2 contains at least 3 variables. By Lemma \ref{threeokay}, assume there are exactly three, and by Lemma \ref{2same2diff}, assume they all have the same $\pi$-coefficient.  
 
 %By Lemma \ref{max7}, assume there are at most five variables in level 2.  By normalization, level 4 is occupied, and so by Lemma \ref{empty234}, assume level 2 contains exactly 3 variables.  One may follow the same reasoning to see that level 4 contains exactly three variables having the same $\pi$-coefficient, level 5 is unoccupied, etc., so that the distribution of all of the variables among levels and $\pi$-coefficient classes is determined.  The form is assumed then to be of type $[{}^{2}_{1}, 0, {}^{3}_{0}, 0, {}^{3}_{0}, 0, \ldots, {}^{3}_{0}, 0]$, and a zero follows from Lemma \ref{2same2diff}.
 
-Next, suppose that level 0 contains exactly three variables,  all having the same $\pi$-coefficient.  First, suppose that level 1 contains at least two variables.  By Lemma \ref{2and2and1}, assume levels 2, 3, and 4 are unoccupied.  By normalization, level 1 contains at least five variables, a pair of which can be contracted up exactly two level, and a zero follow from Lemma \ref{2and2and1}.  Thus, assume level 1 contains at most one variable.  Therefore in this case, the form begins $[{}^3_0,1]$ or $[{}^3_0,0]$.
+Next, suppose that level 0 contains exactly three variables,  all having the same $\pi$-coefficient.  First, suppose that level 1 contains at least two variables.  By Lemma \ref{2and2and1}, assume levels 2, 3, and 4 are unoccupied.  By normalization, level 1 contains at least five variables, a pair of which can be contracted up exactly two levels, and thus a zero follows from Lemma \ref{2and2and1}.  Thus, assume level 1 contains at most one variable.  Therefore in this case, the form begins $[{}^3_0,1]$ or $[{}^3_0,0]$.
 
 %Suppose level 1 contains exactly one variable.  By normalization, level 2 contains a variable, and so by Lemma \ref{2same2more}, assume level 3 is unoccupied.  Thus level 2 contains at least two variables, and by Lemma \ref{threeokay}, assume there are at most three.  By Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient.
 
@@ -487,7 +482,7 @@ Finally, suppose that level 0 contains exactly two variables. By normalization l
 
 %By normalization, level 2 is occupied and so by Lemma \ref{2same2more}, assume level 3 is unoccupied; by normalization level 2 contains at least three variables.  By Lemma \ref{threeokay}, assume it contains exactly three variables, having the same $\pi$-coefficient by Lemma \ref{2same2diff}.
 
-It follows from the above that the form begins with one of the blocks $[{}^{2}_{1}, 0]$, $[{}^{3}_{0}, 0]$, $[{}^{2}_{0}, 1]$ , $[{}^{3}_{1},0]$, or $[{}^{3}_{0}, 1]$.  In each case there are either $\frac{3}{2}\ell$ or  $\frac{3}{2} \ell + 1$ variables in the $\ell = 2$ levels specified.  We will show by induction that the subsequent pairs of levels are composed of the blocks $[{}^2_0,0]$ and $[{}^3_0,0]$.  By normalization, level $\ell$ is occupied, by Lemma \ref{2same2diff} assume level $\ell + 1$ is unoccupied, and so by normalization and Lemmas \ref{threeokay} and \ref{2same2diff}, assume level $\ell$ contains two or three variables having the same $\pi$-coefficient.  If $\frac{3}{2}\ell$ variables are contained in levels 0 through $\ell - 1$, then by normalization level $\ell$ contains exactly three.  By induction, it follows that level $d-2$ contains at least two variables with the same $\pi$-coefficient, and so if levels 0 and 1 are both occupied, a zero follows from Lemma \ref{2same2more} with $k=d-2$, and if level 0 contains two variables with differing $\pi$-coefficients, then a zero follows from Lemma \ref{2same2diff} with $k=d-2$.
+It follows from the above that the form begins with one of the blocks $[{}^{2}_{1}, 0]$, $[{}^{3}_{0}, 0]$, $[{}^{2}_{0}, 1]$ , $[{}^{3}_{1},0]$, or $[{}^{3}_{0}, 1]$.  In each case there are either 3 or 4 variables in the first two levels. Now suppose that there are $\frac{3}{2}\ell$ or  $\frac{3}{2} \ell + 1$ variables in the first $\ell$ levels specified, for even $\ell$.  We will show by induction that the subsequent pairs of levels are composed of the blocks $[{}^2_0,0]$ and $[{}^3_0,0]$.  By normalization, level $\ell$ is occupied, by Lemma \ref{2same2more} assume level $\ell + 1$ is unoccupied, and so by normalization and Lemmas \ref{threeokay} and \ref{2same2diff}, assume level $\ell$ contains two or three variables having the same $\pi$-coefficient.  If $\frac{3}{2}\ell$ variables are contained in levels 0 through $\ell - 1$, then by normalization level $\ell$ contains exactly three.  By induction, it follows that level $d-2$ contains at least two variables with the same $\pi$-coefficient, and so if levels 0 and 1 are both occupied, a zero follows from Lemma \ref{2same2more} with $k=d-2$, and if level 0 contains two variables with differing $\pi$-coefficients, then a zero follows from Lemma \ref{2same2diff} with $k=d-2$.
 
 The only case remaining is forms that begin $[{}^{3}_{0}, 0, {}^{3}_{0}, 0, {}^{3}_{0}, 0, \ldots]$.  If for some even $k$ the variables in \textit{both} of levels $k$ and $k+2$ are all in the same $\pi$-coefficient class, then perform an \textit{st}-contraction from level $k$ to level $k+2$ and a zero follows from Lemma \ref{fromtwo}.  Thus assume the $\pi$-coefficient classes of the variables in the even numbered levels alternate.  Using a slight modification of our notation, this might be written $[{}^{3}_{0}, 0, {}^{0}_{3}, 0, {}^{3}_{0}, 0, {}^{0}_{3}, \ldots]$.  However, because $d=2m$, where $m$ is odd, the variables in levels $d-2$ and $0$ all have the same $\pi$-coefficient, and a zero follows.
 
@@ -514,7 +509,7 @@ Suppose that $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$ and $s
 \begin{proof}
 Assume that the form is normalized.  By Lemma \ref{max5}, assume that level 0 has at most four variables.
 
-First, suppose level 0 has four variables.  By Lemma \ref{max4}, three of them fall into one $\pi$-coefficient class, and one into the other.  By Lemmas \ref{empty1} and \ref{empty4}, assume levels 1 and 4 are unoccupied.  By normalization, levels 2 and 3 together contain at least two variables, and by Lemma \ref{2same2more}, assume at most one is occupied.  By Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient.  If level 2 contains at least two variables, they can be contracted to a variable in level 4 and a zero follows from Lemma \ref{empty4}.  Thus assume level 2 is unoccupied, level 3 contains at least two variables, and by Lemma \ref{threeoh} at most three variables.  Therefore in this case, the form begins with $[{}^3_1,0,0]$ followed by $[{}^2_0,0]$ or $[{}^3_0,0]$.
+First, suppose level 0 has four variables.  By Lemma \ref{max4}, assume three of them fall into one $\pi$-coefficient class, and one into the other.  By Lemmas \ref{empty1} and \ref{empty4}, assume levels 1 and 4 are unoccupied.  By normalization, levels 2 and 3 together contain at least two variables, and by Lemma \ref{2same2more}, assume at most one is occupied.  By Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient.  If level 2 contains at least two variables, they can be contracted to a variable in level 4 and a zero follows from Lemma \ref{empty4}.  Thus assume level 2 is unoccupied, level 3 contains at least two variables, and by Lemma \ref{threeoh} at most three variables.  Therefore in this case, the form begins with $[{}^3_1,0,0]$ followed by $[{}^2_0,0]$ or $[{}^3_0,0]$.
 
 %Therefore in this case, the form begins $[{}^3_1, 0]$ followed by $[{}^2_0,0,0]$ or $[{}^{3}_{0},0,0]$.
 
@@ -522,12 +517,12 @@ Next, suppose there are exactly three variables in level 0, not all having the s
 
 Now suppose level 0 contains exactly three variables having the same $\pi$-coefficient.  By Lemma \ref{max3again}, assume level 1 has at most one variable.  Suppose level 1 is unoccupied.  By normalization level 2 contains at least one variable, and so by Lemma \ref{2same2more}, assume level 3 is unoccupied.  By normalization, level 2 contains at least two variables.  By Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient and thus can be contracted to a variable in level 4.  A zero follows from Lemma \ref{empty4}.  Thus assume level 1 contains exactly one variable.  By Lemma \ref{empty4}, assume level 4 is unoccupied.  By normalization, levels 2 and 3 together contain at least two variables, and by Lemma \ref{2same2more}, assume at most one is occupied, and by Lemma \ref{2same2diff} that they have the same $\pi$-coefficient.  If the variables are in level 2, they can be contracted to a variable in level 4, and a zero follows from Lemma \ref{empty4}.  Thus, by Lemma \ref{threeoh} assume level 3 contains two or three variables with the same $\pi$-coefficient and level 4 contains zero.  Therefore in this case, the form begins $[{}^3_0, 1, 0]$ followed by $[{}^2_0,0]$ or $[{}^3_0,0]$.
 
-Next, suppose level 0 contains exactly two variables with differing $\pi$-coefficients.  By normalization, level 1 contains at least one variable, and by Lemma \ref{2diff2more}, assume levels 2 and 4 are unoccupied, and so by normalization level 1 contains at least two variables.  First, suppose level 1 contains at least three variables.  A \textit{d}-contraction can be performed from level 0 so that the resulting variables in level 1 form two pairs with the same $\pi$-coefficients.  By Lemma \ref{empty234} with $k=1$, assume levels 3, 4, and 5 are also unoccupied.  By normalization level 1 contains at least five variables.  A \textit{d}-contraction can be performed from level 0 such that the resulting six variables in level 1 can be used to form three pairs each having the same $\pi$-coefficient; a zero follows from Lemma \ref{max7}.  Thus, assume level 1 contains exactly two variables, and so by normalization applied to levels 0 through 4, level 3 contains at least two variables.  After a \textit{d}-contraction from level 0, assume by Lemma \ref{2same2diff} with $k=1$ that the variables in level 3 have the same $\pi$-coefficient.  Suppose level 3 contains at least four variables.  By Lemma \ref{empty234}, if $d=6$ a zero follows; otherwise assume levels 5, 6, and 7 are unoccupied.  By normalization level 3 contains at least five variables, and a zero follows from Lemma \ref{fivesame}.  Thus assume level 3 contains at most three variables.  Therefore in this case, the form begins with $[{}^1_1, 2, 0]$ and is followed by $[{}^2_0, 0]$ or $[{}^3_0, 0]$.
+Next, suppose level 0 contains exactly two variables with differing $\pi$-coefficients.  By normalization, level 1 contains at least one variable, and by Lemma \ref{2diff2more}, assume levels 2 and 4 are unoccupied, and so by normalization level 1 contains at least two variables.  First, suppose level 1 contains at least three variables.  Because a \textit{d}-contraction could be performed from level 0 so that the resulting variables in level 1 would form two pairs with the same $\pi$-coefficients, by Lemma \ref{empty234} with $k=1$, assume levels 3, 4, and 5 are also unoccupied.  By normalization level 1 contains at least five variables.  A \textit{d}-contraction can be performed from level 0 such that the resulting six variables in level 1 can be used to form three pairs each having the same $\pi$-coefficient; a zero follows from Lemma \ref{max7}.  Thus, assume level 1 contains exactly two variables, and so by normalization applied to levels 0 through 4, level 3 contains at least two variables.  After a \textit{d}-contraction from level 0, assume by Lemma \ref{2same2diff} with $k=1$ that the variables in level 3 have the same $\pi$-coefficient.  Suppose level 3 contains at least four variables.  By Lemma \ref{empty234}, if $d=6$ a zero follows; otherwise assume levels 5, 6, and 7 are unoccupied.  By normalization level 3 contains at least five variables, and a zero follows from Lemma \ref{fivesame}.  Thus assume level 3 contains at most three variables.  Therefore in this case, the form begins with $[{}^1_1, 2, 0]$ and is followed by $[{}^2_0, 0]$ or $[{}^3_0, 0]$.
 
 %Suppose they are not all in the same $\pi$-coefficient class.
 %$({}^{1}_{1}, 2, 0, {}^{1}_{1}) \xrightarrow{d} (0, {}^{2*}_{1}, 0, {}^{1}_{1}) \xrightarrow{s2} (0, 1, 0, {}^{2*}_{1})$  A zero follow from Lemma \ref{fromtwo}.  By Lemma \ref{threeoh}, level 3 contains at most three variables.  Thus, assume level 3 contains two or three variables, all having the same $\pi$-coefficient, and level 4 is unoccupied.
 
-Finally, suppose level 0 contains exactly two variables with the same $\pi$-coefficient.  By normalization, level 1 is occupied. Suppose level 1 contains at least two variables.  By Lemma \ref{2and2and1}, assume levels 2, 3, and 4 are unoccupied.
+Finally, suppose level 0 contains exactly two variables with the same $\pi$-coefficient.  By normalization, level 1 is occupied. Suppose level 1 contains at least two variables; by Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient.  By Lemma \ref{2and2and1}, assume levels 2, 3, and 4 are unoccupied.
 %  If level 2 contains a variable, by Lemma \ref{2same2diff} assume that an \textit{s2}-contraction from level 0 produces a variable with the same $\pi$-coefficient; a zero follows from Lemma \ref{fromtwo}.  If level 3 contains a variable, by Lemma \ref{2same2diff} assume that an \textit{s2}-contraction from level 1 produces a variable with the same $\pi$-coefficient; a zero follows from Lemma \ref{fromtwo}.  If level 4 contains a variable, by Lemma \ref{fromtwo} assume an \textit{s3}-contraction from level 0 produces a variable in level 3; a zero follows from Lemma \ref{2same2more} with $k=1$.
 By normalization, level 1 contains at least four variables.  By Lemma \ref{empty4} with $k=1$, assume level 5 is unoccupied, and so by normalization level 1 contains at least five variables.  By Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient; a zero follows from Lemma \ref{fivesame}. Thus assume level 1 contains exactly one variable, and by normalization level 2 is occupied.  By Lemma \ref{2same2more}, assume level 3 is unoccupied, and so by normalization level 2 contains at least two variables, and by Lemma \ref{threeoh}, at most three.  By Lemma \ref{2same2diff}, assume they have the same $\pi$-coefficient.  Therefore in this case, the form begins with $[{}^2_0, 1]$ followed by $[{}^2_0,0]$ or $[{}^3_0,0]$.
 
@@ -548,11 +543,11 @@ In both cases, the initial block of $\ell$ levels is followed by $[{}^2_0, 0]$ o
 %In both cases, the hypotheses at the beginning of the previous paragraph are again satisfied.  Thus it may be assumed that the type of the form begins with $[{}^{2}_{1}, 1, 0]$, $[{}^{2}_{1}, 0]$,  $[{}^{3}_{0}, 1, 0]$, $[{}^{1}_{1}, 2, 0]$, or $[{}^{2}_{0}, 1]$ and is followed by blocks of the form $[{}^{2}_{0},0]$ or $[{}^{3}_{0}, 0, 0]$.  A zero follows from Lemmas \ref{2same2diff} and \ref{2same2more}.
 \end{proof}
 
-If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, from Lemma \ref{max3} we have $\Gamma(d, K) \le \frac{3}{2}d$.  To demonstrate we have the equality from the first part of Theorem \ref{theo}, we present a form in $s = \frac{3}{2}d - 1$ variables that has no nontrivial zero.
+If $K \in \{\mathbb{Q}_2(\sqrt{2}), \mathbb{Q}_2(\sqrt{10}), \mathbb{Q}_2(\sqrt{-2}), \mathbb{Q}_2(\sqrt{-10})\}$, from Lemma \ref{max3} we have $\Gamma(d, K) \le \frac{3}{2}d$.  To demonstrate we have the equality from the first part of Theorem \ref{theo}, we present a form in $s = \frac{3}{2}d - 1$ variables that has no nontrivial zero.  Let
 
 \begin{align*}
 f = \sum_{i=0}^{\frac{d-2}{4} - 1} \pi^{4i}[(x_{6i}^d + x_{6i+1}^d + x_{6i+2}^d) + (\pi^2+\pi^3)(x_{6i+3}^d + x_{6i+4}^d + x_{6i+5}^d)] + \\
-\pi y^d + \pi^{d-2}z^d
+\pi y^d + \pi^{d-2}z^d.
 \end{align*}
 
 Recall that for these four fields $2 \equiv \pi^2 \pmod{\pi^4}$ and that the $d$\textsuperscript{th} powers modulo $\pi^4$ are $0$, $1$, and $1 + \pi^2 + \pi^3$.
@@ -561,14 +556,14 @@ Suppose that $f$ has a nontrivial zero $(a_0, \ldots, a_{s-3}, b, c)$ in $\mathc
 
 \begin{align*}
     (1 + \pi)(x^d + y^d + z^d) + \pi^2(u^d + v^d + w^d) \equiv \\
-    (1 + \pi)[(x^d + y^d + z^d) + (\pi^2 + \pi^3)(u^d + v^d + w^d)] \pmod{\pi^4}
+    (1 + \pi)[(x^d + y^d + z^d) + (\pi^2 + \pi^3)(u^d + v^d + w^d)] \pmod{\pi^4}.
 \end{align*}
 
 Suppose $\pi$ divides all of $a_i$ for $i < 3j$.  Then $\pi^2$ divides $a_{3j}^d + a_{3j+1}^d + a_{3j+2}^d$.  If $\pi$ does not divide all of $a_{3j}$, $a_{3j+1}$, and $a_{3j+2}$, then modulo $\pi^4$, $a_{3j}^d + a_{3j+1}^d + a_{3j+2}^d \in \{\pi^2, \pi^3\}$, and so $a_{3j}^d + a_{3j+1}^d + a_{3j+2}^d + (\pi^2 + \pi^3)(a_{3j+3}^d + a_{3j+4}^d + a_{3j+5}^d) \not \equiv 0 \pmod{\pi^4}$.  Thus assume all of $a_{3j}$, $a_{3j+1}$, and $a_{3j+2}$ are divisible by $\pi$.  By induction, $\pi$ divides each of $a_0, \ldots, a_{s-3}$.  So, we must have $\pi | c$, a contradiction.  Thus $f$ has no primitive zero modulo $\pi^d$, and therefore $f$ has no nontrivial zero over $K$.
 
-If $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$, from Lemma \ref{final} we have $\Gamma(d, K) \le d+1$.  To demonstrate we have the equality from the second part of Theorem \ref{theo}, we present a form in $s = d$ variables that has no nontrivial zero over $K$.
+If $K \in \{\mathbb{Q}_2(\sqrt{-1}), \mathbb{Q}_2(\sqrt{-5})\}$, from Lemma \ref{final} we have $\Gamma(d, K) \le d+1$.  To demonstrate we have the equality from the second part of Theorem \ref{theo}, we present a form in $s = d$ variables that has no nontrivial zero over $K$.  Let
 
-$$g = \sum_{i=0}^{d-1} \pi^i x_i^d$$
+$$g = \sum_{i=0}^{d-1} \pi^i x_i^d.$$
 
 \bibliographystyle{alpha}
 \bibliography{biblio}
